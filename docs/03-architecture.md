@@ -1,3 +1,6 @@
+> ⚠️ **Document d'étude.** La voie retenue est la passerelle décrite dans
+> [00-orientation.md](00-orientation.md), pas le remplacement d'Avantage.
+
 # 3. Architecture proposée
 
 ## 3.1 Principe directeur

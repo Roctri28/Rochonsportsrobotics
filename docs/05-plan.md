@@ -1,3 +1,6 @@
+> ⚠️ **Document d'étude.** La voie retenue est la passerelle décrite dans
+> [00-orientation.md](00-orientation.md), pas le remplacement d'Avantage.
+
 # 5. Plan de livraison
 
 ## Phase 0 — Découverte (2 à 4 semaines)

@@ -1,26 +1,36 @@
-# Projet — Logiciel de comptabilité et paie construction (Québec) avec intégration CCQ et assistance IA
+# Accélérer le cycle de paie d'un entrepreneur en construction (Québec)
 
-Cadrage d'un logiciel de gestion pour entrepreneur assujetti au décret de la construction
-du Québec : paie multi-conventions, rapport mensuel CCQ, coût de revient par chantier,
-comptabilité — avec une couche d'intelligence artificielle qui accélère la **saisie** et le
-**contrôle**, jamais le **calcul**.
+L'entreprise utilise **Avantage** et en est satisfaite. Le problème est le **temps** que
+prend le cycle de paie — pas le logiciel de paie lui-même.
 
-Référence fonctionnelle : les logiciels de gestion construction utilisés au Québec
-(type *Avantage*). Client pilote pressenti : **GTR**.
+**Orientation retenue : construire une passerelle en amont d'Avantage, pas un remplacement.**
+Saisie de temps mobile en chantier, extraction assistée par IA des feuilles papier,
+contrôles d'anomalies, puis fichier d'import vers Avantage. Avantage garde la paie, les
+conventions collectives, les retenues, le rapport mensuel CCQ et les fins d'année.
+
+👉 **Commencer par [docs/00-orientation.md](docs/00-orientation.md).**
 
 ## Documents
 
-| Document | Contenu |
-|---|---|
-| [docs/01-faisabilite.md](docs/01-faisabilite.md) | Réponse à la question : est-ce faisable, à quel coût, quels sont les vrais obstacles |
-| [docs/02-perimetre.md](docs/02-perimetre.md) | Périmètre fonctionnel à égaler, et ce qu'on ne construit pas |
-| [docs/03-architecture.md](docs/03-architecture.md) | Architecture technique proposée |
-| [docs/04-ia.md](docs/04-ia.md) | Où l'IA fait gagner du temps, et les garde-fous |
-| [docs/05-plan.md](docs/05-plan.md) | Plan de livraison par phases et critères d'acceptation |
+| Document | Contenu | Statut |
+|---|---|---|
+| [00-orientation](docs/00-orientation.md) | **Le vrai problème, la solution recommandée, le produit minimal** | ✅ Actif |
+| [01-faisabilite](docs/01-faisabilite.md) | Faisabilité d'un remplacement d'Avantage : verdict et obstacles | 📚 Étude |
+| [02-perimetre](docs/02-perimetre.md) | Périmètre fonctionnel complet d'un tel logiciel | 📚 Étude |
+| [03-architecture](docs/03-architecture.md) | Architecture d'un système de paie construction | 📚 Étude |
+| [04-ia](docs/04-ia.md) | Usages de l'IA et garde-fous — **s'applique aussi à la passerelle** | ✅ Actif |
+| [05-plan](docs/05-plan.md) | Plan de livraison d'un remplacement complet | 📚 Étude |
 
-## État
+Les documents marqués « Étude » répondent à la question « est-ce possible ? ». La réponse
+est oui, mais ce n'est pas la voie retenue pour le besoin actuel.
 
-Phase de cadrage. Aucun code applicatif. Les informations réglementaires ci-dessous doivent
-être **validées auprès des sources officielles** (CCQ, Revenu Québec, ARC, CNESST) avant
-toute implémentation : elles sont issues d'une connaissance générale du domaine, pas d'une
-lecture des spécifications courantes.
+## Prochaine étape
+
+Une seule question bloquante : **Avantage accepte-t-il un fichier d'import de feuilles de
+temps, et sous quel format ?** À poser à l'éditeur. Tout le reste en découle.
+
+## Avertissement
+
+Les informations réglementaires citées dans ces documents (CCQ, conventions collectives,
+retenues à la source) proviennent d'une connaissance générale du domaine. Elles doivent
+être validées auprès des sources officielles avant toute implémentation.
